@@ -1,11 +1,24 @@
-import {Text, View} from "react-native";
+import * as React from 'react';
+import {Text, View} from 'react-native';
+import {StackActions, useNavigation} from '@react-navigation/native';
+import {globalStyles} from '../../theme/theme.tsx';
+import PrimaryButton from '../../components/PrimaryButton.tsx';
 
-const SttingsScreen = () => {
-    return (
-        <View>
-            <Text>Sttings-Screen</Text>
-        </View>
-    )
-}
+const SettingsScreen = () => {
+  const navigator = useNavigation();
 
-export default SttingsScreen;
+  return (
+    <View style={globalStyles.container}>
+      {/* eslint-disable-next-line react-native/no-inline-styles */}
+      <Text style={{marginBottom: 10}}>Settings-Screen</Text>
+
+      <PrimaryButton label="Regresar" onPress={() => navigator.goBack()} />
+      <PrimaryButton
+        label="Home"
+        onPress={() => navigator.dispatch(StackActions.popToTop())}
+      />
+    </View>
+  );
+};
+
+export default SettingsScreen;

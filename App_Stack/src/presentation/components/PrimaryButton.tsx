@@ -1,20 +1,21 @@
-import React from "react";
-import { Pressable, Text, PressableProps } from "react-native";
-import { globalStyles } from "../theme/Theme";
+import React from 'react';
+import {Pressable, Text, PressableProps} from 'react-native';
+import {globalStyles} from '../theme/theme.tsx';
 
-
-interface primaryButtonPropos extends PressableProps{
-    label: string;
-    onPress: () => void;
+interface PrimaryButtonProps extends PressableProps {
+  label: string;
+  onPress: () => void;
 }
 
-const primaryButton: React.FC<primaryButtonPropos> = ({label, onPress}: primaryButtonPropos) => {
-    return (
-      <Pressable style={globalStyles.primaryButton} onPress={() => onPress()}>
-        <Text style={globalStyles.buttonText}>{label}</Text>
-      </Pressable>
-    );
-  };
+const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+  label,
+  onPress,
+}: PrimaryButtonProps) => {
+  return (
+    <Pressable style={globalStyles.primaryButton} onPress={() => onPress()}>
+      <Text style={globalStyles.buttonText}>{label}</Text>
+    </Pressable>
+  );
+};
 
-  export default primaryButton;
-  
+export default PrimaryButton;

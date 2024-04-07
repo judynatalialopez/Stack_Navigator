@@ -1,11 +1,12 @@
-import {Text, View} from "react-native";
+import * as React from 'react';
+import {Text, View} from 'react-native';
 
 const AboutScreen = () => {
-    return (
-        <View>
-            <Text>About-Screen</Text>
-        </View>
-    )
-}
+  return (
+    <View>
+      <Text>About-Screen</Text>
+    </View>
+  );
+};
 
 export default AboutScreen;
