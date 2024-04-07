@@ -1,9 +1,14 @@
-import {Text, View} from "react-native";
+import {Pressable, Text, View} from "react-native";
+import { globalStyles } from "../../theme/Theme";
+import { useNavigation } from "@react-navigation/native";
 
 const HomeScren = () => {
+    const navigation = useNavigation();
     return (
-        <View>
-            <Text> Home-Screen-With-StackNavigator</Text>
+        <View style={globalStyles.container}>
+            <Pressable style={globalStyles.primaryButton} onPress={() => navigation.navigate('Products' as never)}>
+            <Text style={globalStyles.buttonText}>Productos</Text>
+            </Pressable>
         </View>
     )
 }
