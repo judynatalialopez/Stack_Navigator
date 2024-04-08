@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../screens/home/HomeScreen.tsx';
-import ProductsScreen from '../screens/products/ProductsScreen.tsx';
-import SettingsScreen from '../screens/settings/SettingsScreen.tsx';
-import ProductScreen from '../screens/products/ProductScreen.tsx';
+import HomeScreen from '../screens/home/HomeScreen';
+import ProductsScreen from '../screens/products/ProductsScreen';
+import SettingsScreen from '../screens/settings/SettingsScreen';
+import ProductScreen from '../screens/products/productScreen';
 
 export type RootStackParams = {
   Home: undefined;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Text, View} from 'react-native';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {RootStackParams} from '../../route/StackNavigator';
-import {globalStyles} from '../../theme/theme';
+import {globalStyles} from '../../theme/Theme';
 import {useEffect} from 'react';
 
 const ProductScreen = () => {

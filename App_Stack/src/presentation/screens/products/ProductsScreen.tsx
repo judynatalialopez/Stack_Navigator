@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {FlatList, Text, View} from 'react-native';
-import {globalStyles} from '../../theme/theme';
+import {globalStyles} from '../../theme/Theme';
 import PrimaryButton from '../../components/PrimaryButton';
 import {type NavigationProp, useNavigation} from '@react-navigation/native';
 import {type RootStackParams} from '../../route/StackNavigator';

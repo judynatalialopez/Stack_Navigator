@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pressable, Text, PressableProps} from 'react-native';
-import {globalStyles} from '../theme/theme.tsx';
+import {globalStyles} from '../theme/Theme';
 
 interface PrimaryButtonProps extends PressableProps {
   label: string;
